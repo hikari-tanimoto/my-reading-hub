@@ -56,11 +56,14 @@ export default function Home() {
                   </svg>
                   <span>こんにちは、{session.user?.name}さん！</span>
                 </div>
-                <div className="flex gap-2">
-                  <Link href="/dashboard" className="btn btn-primary">
+                <div className="flex gap-2 w-full">
+                  <Link href="/dashboard" className="btn btn-primary flex-1">
                     ダッシュボード
                   </Link>
-                  <button onClick={() => signOut()} className="btn btn-outline">
+                  <button
+                    onClick={() => signOut()}
+                    className="btn btn-outline flex-1"
+                  >
                     ログアウト
                   </button>
                 </div>
