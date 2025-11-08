@@ -20,21 +20,24 @@ export default function Home() {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content text-center">
-        <div className="max-w-md">
+        <div className="max-w-xl">
           <div>
             <div className="flex justify-center">
               <Image
-                width={192}
-                height={192}
+                width={200}
+                height={200}
                 src="/images/logos/logo.png"
                 alt="My Reading Hub Logo"
               />
             </div>
           </div>
 
-          <p className="py-4">
-            読書を管理し、知識を蓄積するためのプラットフォームです。
-            あなたの読書体験をより豊かにします。
+          <p className="py-8">
+            チームのメンバーが読んだ書籍を管理
+            <br />
+            書籍を起点としたコンテキストを可視化
+            <br />
+            メンバーの知識平準化を促します
           </p>
 
           <div className="flex justify-center">
