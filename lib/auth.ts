@@ -36,6 +36,7 @@ export const authOptions: NextAuthOptions = {
   session: {
     strategy: "jwt" as const,
   },
+  secret: process.env.NEXTAUTH_SECRET,
 };
 
 export async function getCurrentUser() {
